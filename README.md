@@ -43,7 +43,8 @@
 
 ### What I learned
 
-My next project, I learned better how to make the page responsive with flexbox.
+My next project, I learned better how to make the page responsive with flexbox
+and also How should I store colors and fonts in a variable
 And most importantly, I became more attentive to details when making a responsive page 🚀🚀✊
 
 
