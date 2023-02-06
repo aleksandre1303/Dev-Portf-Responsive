@@ -22,7 +22,7 @@
 
 ### Links
 
-- Solution URL:  https://github.com/aleksandre1303/Uranus-responsive-page
+- Solution URL:  https://github.com/aleksandre1303/Dev-Portf-Responsive
 - Live Site URL: https://aleksandre1303.github.io/Header-Hero-Responsive/
 
 
