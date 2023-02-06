@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  /* Typography */
+  --heading-text: "Prata", serif;
+  --body-text: "Inter", sans-serif;
+
+  /* Colors */
+  --bg-color: #0a0a0b;
+  --text-color: #adadad;
+  --white-color: #ffffff;
+  --yellow-color: #fbe850;
+  --light-blue: #2e3038;
+  --light-gray: #e7e7e7;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--body-text);
+  font-size: 1rem;
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--light-gray);
+  font-family: var(--heading-text);
+}
+
+p,
+a {
+  line-height: 150%;
+}
+
+.container {
+  max-width: 1190px;
+  width: 96%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 1em 0 1em;
+  background-color: #171718;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  text-decoration: none;
+  color: var(--light-gray);
+  font-family: var(--heading-text);
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item {
+  list-style: none;
+  margin-right: 2em;
+}
+
+.menu__list-link {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.menu__list-link:hover {
+  color: var(--light-gray);
+}
+
+.get-in-touch {
+  width: 140px;
+  height: 48px;
+  background-color: var(--yellow-color);
+  outline: none;
+  border: 1px solid var(--yellow-color);
+  cursor: pointer;
+  font-family: var(--heading-text);
+  transition: all 0.5s;
+}
+
+.get-in-touch:hover {
+  background: transparent;
+  color: var(--light-gray);
+}
+
+.hamburger {
+  display: none;
+}
+
+.hero {
+  padding-top: 10em;
+}
+
+.hero-texts {
+  max-width: 40rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-par {
+  color: var(--text-color);
+  margin-top: 0.7em;
+}
+
+.logos-container {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(6, auto);
+  margin: 5em 0 5em;
+}
+
+.logos-container img {
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+}
+
+.card-image img {
+  max-width: 100%;
+}
+
+.card-link {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-family: var(--heading-text);
+  font-size: 1.56rem;
+  display: flex;
+  align-items: center;
+  margin: 0.6em 0 0.3em;
+}
+
+.card-link img {
+  transform: translateX(0);
+  transition: 0.5s;
+  margin: 0;
+  padding: 0;
+}
+
+.card-link:hover img {
+  transform: translateX(0.3em);
+}
+
+.about {
+  margin-top: 5em;
+  background-color: var(--light-blue);
+  padding: 2em 0 2em;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-title {
+  font-size: 1.9rem;
+}
+
+.about-column {
+  max-width: 30em;
+}
+
+.about-par {
+  margin-top: 1.3em;
+}
+
+.first-paragraph {
+  margin-top: 1.3em;
+}
+
+.contact {
+  margin: 5em 0 5em;
+}
+
+.contact__inner {
+  max-width: 30em;
+}
+
+.contact-par {
+  margin: 0.4em 0 1em;
+}
+
+.footer {
+  background-color: var(--light-blue);
+  padding: 1em 0 1em;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socicons-container {
+  display: flex;
+  gap: 0.6em;
+}
+
+/* Tablet version 768px */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1.4em 0 1.4em;
+  }
+  .menu,
+  .header-btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .logos-container {
+    grid-template-columns: repeat(3, auto);
+    column-gap: 5em;
+    row-gap: 1.3em;
+    justify-content: center;
+  }
+  .about__inner {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .about-column {
+    max-width: 100%;
+  }
+  .about-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
+
+/* Mobile version 428px */
+@media screen and (max-width: 428px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .logos-container {
+    grid-template-columns: repeat(2, 100px);
+  }
+  .about-title {
+    font-size: 2.2rem;
+  }
+}
