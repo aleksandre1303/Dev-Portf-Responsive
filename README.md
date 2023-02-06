@@ -43,8 +43,8 @@
 
 ### What I learned
 
-I learned better how to make the page responsive with flexbox, 
-this is my second responsive page website 🚀🚀✊
+My next project, I learned better how to make the page responsive with flexbox.
+And most importantly, I became more attentive to details when making a responsive page 🚀🚀✊
 
 
 ## Author
